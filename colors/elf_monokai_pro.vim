@@ -38,6 +38,7 @@ let s:arg = '#aadb7b'
 let s:word = '#fd6389'
 let s:warn = '#fd6389'
 let s:other = '#5f5f5f'
+let s:file = '#cccccc'
 
 " Text format
 let s:b = 'bold'
@@ -72,6 +73,7 @@ call s:HL("Constant", 'NONE', 'NONE', 'NONE', 'NONE', 'NONE')
 call s:HL("Cursor" , 231, 231, 'NONE', s:lightest, s:lightest)
 call s:HL("CursorColumn" , 'NONE', 237, 'NONE', s:accent, 'NONE')
 call s:HL("CursorLine" , 'NONE', 237, 'NONE', s:accent, 'NONE')
+call s:HL("CursorLineNr" , 'NONE', 237, 'NONE', 'NONE', s:muted)
 call s:HL("Define", 204, 'NONE', 'NONE', 'NONE', s:word)
 call s:HL("Directory", 141, 'NONE', 'NONE', 'NONE', s:str)
 call s:HL("EndOfBuffer", 231, 235, 'NONE', s:bg, s:bg)
@@ -110,18 +112,18 @@ call s:HL("VertSplit" , 241, 241, 'NONE', s:bg, s:splits)
 call s:HL("Visual" , 'NONE', 239, 'NONE', s:visual, 'NONE')
 call s:HL("WarningMsg", 231, 204, 'NONE', s:warn, s:lightest)
 
-
 " Netrw File Browser
 call s:HL("netrwTreeBar", 231, 204, 'NONE', 'NONE', s:bg)
 call s:HL("netrwClassify", 231, 204, 'NONE', 'NONE', s:lineNumber)
 call s:HL("netrwLink", 231, 204, 'NONE', 'NONE', s:muted)
 call s:HL("netrwSlash", 231, 204, 'NONE', s:bg, s:bg)
-call s:HL("netrwSymLink", 231, 204, 'NONE', 'NONE', s:arg)
+call s:HL("netrwSymLink", 231, 204, s:i, 'NONE', s:arg)
+call s:HL("netrwPlain", 242, 'NONE', 'NONE', 'NONE', s:file)
 
 " Diffs
-call s:HL("DiffAdd", 231, 155, s:b, s:arg, s:lightest)
-call s:HL("DiffChange", 'NONE', 'NONE', 'NONE', 'NONE', 'NONE')
-call s:HL("DiffDelete", 204, 'NONE', 'NONE', s:word, 'NONE')
+call s:HL("DiffAdd", 231, 155, s:b, 'NONE', s:arg)
+call s:HL("DiffChange", 'NONE', 'NONE', 'NONE', 'NONE', s:str2)
+call s:HL("DiffDelete", 204, 'NONE', 'NONE', 'NONE', s:warn)
 call s:HL("DiffText", 231, 24, s:b, s:id, s:lightest)
 
 " Ruby
