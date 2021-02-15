@@ -1,7 +1,7 @@
 # [Elf] Monokai Pro
 
 ![Screen shot](./images/javascript.png)
-** [Elf] Monokai Pro Screenshot **
+_[Elf] Monokai Pro Screenshot_
 
 ---
 
@@ -10,7 +10,7 @@ It has support for italic fonts, too. The font used in the screenshots is Victor
 
 To use it, follow these steps:
 
-1. Download or clone this repo
-2. Copy the `colors/elf_monokai_pro.vim` file to your NVIM colors directory, usually `~/.config/nvim/colors/`
+1. Copy the `colors/elf_monokai_pro.vim` file to your NVIM colors directory, usually `~/.config/nvim/colors/`
+2. Set the color scheme: `:colorscheme elf_monokai_pro`.
 3. ???
 4. Profit!
