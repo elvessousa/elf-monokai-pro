@@ -4,7 +4,7 @@
 
 ## About this theme
 
-This is a theme for **Vim** and **Neovim** adapted from the famous [Monokai Pro theme](https://monokai.pro), with a little twists here and there. It has support for italic fonts, too. The font used in the screenshots is Victor Mono. At the moment, I only tested it in Neovim, but I think it should work with Vim as well.
+This is a theme for **Vim** and **Neovim** adapted from the famous [Monokai Pro theme](https://monokai.pro), with a little twists here and there. It has support for italic fonts, too. The font used in the screenshots is Victor Mono. At the moment, I only tested it in Neovim, but I think it should work with Vim as well. For the best experience, make sure your terminal supports true colors.
 
 ## Installation
 
@@ -15,9 +15,8 @@ To use it, follow these steps:
 3. ???
 4. Profit!
 
-## Setting it as your default theme
+## Setting it as your default
 
-For the best experience, make sure your terminal supports true colors.
 If you want to make it your default, just add this line to your `init.vim`:
 
 ```vim
